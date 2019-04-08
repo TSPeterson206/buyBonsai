@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./stylecheck.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-flex">
+        <header>
+            <div class='row'>
+                <div class='col-2'>
+                    <h1>
+                        <a href='./index.html'>BuyBonsai</a>
+                    </h1>
+                </div>
+                <nav class='col-7'>
+                    <ul class='nav'>
+                        <li class='nav-item'>
+                            <a class='nav-link' href='./products.html'>All Bonsai</a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link' href='./products.html'>Beginner Bonsai</a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link' href='./products.html'>Flowering Bonsai</a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link' href='./products.html'>Specialty Bonsai</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class='col-3'>
+                    <div class='row'>
+                        <a href='./checkout.html'><img src='https://openclipart.org/download/26719/baroquon-Shopping-Cart.svg'
+                                height='30px' /></a>
+                        <p>3 Items</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="row pmt">
+            <div id="paymentForms" class="col-7">
+                <p>Shipping Information</p>
+                <div id="shipform">
+                    <form id="shippingForm">
+                        <label for="shipName">Name</label>
+                        <input type="text" id="shipName" placeholder="John Smith" required><br>
+                        <label for="shipAdd1">Address1</label>
+                        <input type="text" id="shipAdd1" placeholder="123 Main St" required><br>
+                        <label for="shipAdd2">Address2</label>
+                        <input type="text" id="shipAdd2" placeholder="Apt B205"><br>
+                        <div class="cityStateZip">
+                            <label for="shipCity">City</label>
+                            <input type="text" id="shipCity" placeholder="Seattle" required><br>
+                            <label for="shipState">State</label>
+                            <input type="text" id="shipState" placeholder="WA"required><br>
+                            <label for="shipZip">Zip</label>
+                            <input type="text" id="shipZip" placeholder="98115" required><br>
+                        </div>
+                        <label for="shipEmail">E-Mail</label>
+                        <input type="email" id="shipEmail" placeholder="user@email.com" required><br>
+                        <button type="button" class="btn btn-primary infoSubmit">Submit</button>
+                        <label for="copyToBilling">Same as billing info?</label>
+                        <input type="checkbox" id="copyToBilling">
+                    </form>
+                </div>
+                <p>Billing Information</p>
+                <div id="billform">
+                    <form id="billingForm">
+                        <label for="billName">Name</label>
+                        <input class="info" type="text" id="billName" required><br>
+                        <label for="billName">Address1</label>
+                        <input class="info" type="text" id="billAdd1" required><br>
+                        <label for="billName">Address2</label>
+                        <input class="info" type="text" id="billAdd2"><br>
+                        <div class="cityStateZip">
+                            <label for="billName">City</label>
+                            <input class="info" type="text" id="billCity" required><br>
+                            <label for="billName">State</label>
+                            <input class="info" type="text" id="billState" required><br>
+                            <label for="billName">Zip</label>
+                            <input class="info" type="text" id="billZip" required><br>
+                        </div>
+                        <label for="billName">E-Mail</label>
+                        <input class="info" type="email" id="billEmail" required>
+                    </form>
+                </div>
+            </div>
+            <div id="creditColumn" class="col-5">
+                <div class="row creditRow">
+                    <div id="credit">
+                        <img class="creditImage" src="creditCard.jpg">
+                    </div>
+                </div>
+                <div class="row creditFields">
+
+                    <form class="creditCard">
+                        <label>Name on Card</label>
+                        <input type="text" class="creditName" placeholder="John Smith" required />
+                        <label>Card Number</label>
+                        <input type="text" class="creditNumber" maxlength="16" placeholder="XXXXXXXXXXXXXXXX" required />
+                        <div class="column">
+                            <label>CVV</label>
+                            <input type="text" class="creditCVV" maxlength="3" placeholder="XXX" required />
+                        </div>
+                        <div class="column">
+                            <label>Expiration Date</label>
+                            <input class="creditExpire" type="text" id="datepicker" placeholder="mm/yy" maxlength="5" required>
+                        </div>
+                        <button type="button" class="creditSubmit btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid receiptContainer">
+        <div class="row">
+            <div class="col-2 cartImage">
+                <img class="card-img-top" id="cartImage" src="https://previews.123rf.com/images/iamnee/iamnee1310/iamnee131000152/22827365-a-shopping-cart-full-with-beautiful-bonsai-trees-in-a-flowerpot-for-garden-decoration.jpg"
+                    alt="Card image cap">
+
+            </div>
+            <div class="col-4 boughtItems">
+
+                <form id="itemsForm">
+                    <div class="item">
+                        <input id="item" type="text" class="boughtItem1 form-control" placeholder="Item1">
+                        <input id="price" type="text" class="boughtItem1price form-control price price1" placeholder='0'>
+                        <button class="clearButton" type="button" id="clearItem1">X</button>
+                    </div>
+
+                    <div class="item">
+                        <input id="item" type="text" class="form-control boughtItem2" placeholder="Item2">
+                        <input id="price" type="text" class="boughtItem2price form-control price price2" placeholder='0'>
+                        <button class="clearButton" type="button" id="clearItem2">X</button>
+                    </div>
+
+                    <div class="item">
+                        <input id="item" type="text" class="form-control boughtItem3" placeholder="Item3">
+                        <input id="price" type="text" class="boughtItem3price form-control price price3" placeholder='0'>
+                        <button class="clearButton" type="button" id="clearItem3">X</button>
+                    </div>
+
+                    <div class="item">
+                        <input id="item" type="text" class="form-control boughtItem4" placeholder="Item4">
+                        <input id="price" type="text" class="boughtItem4price form-control price price4" placeholder='0'>
+                        <button class="clearButton" type="button" id="clearItem4">X</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="col-4">
+
+                <form id="itemsForm">
+                    <div class="item">
+                        <input id="item" type="text" class="form-control boughtItem5" placeholder="Item5">
+                        <input id="price" type="text" class="boughtItem5price form-control price price1" placeholder='0'>
+                        <button class="clearButton" type="button" id="clearItem5">X</button>
+                    </div>
+
+                    <div class="item">
+                        <input id="item" type="text" class="form-control boughtItem6" placeholder="Item6">
+                        <input id="price" type="text" class="boughtItem6price form-control price price2" placeholder='0'>
+                        <button class="clearButton" type="button" id="clearItem6">X</button>
+                    </div>
+
+                    <div class="item">
+                        <input id="item" type="text" class="form-control boughtItem7" placeholder="Item7">
+                        <input id="price" type="text" class="boughtItem7price form-control price price3" placeholder='0'>
+                        <button class="clearButton" type="button" id="clearItem7">X</button>
+                    </div>
+
+                    <div class="item">
+                        <input id="item" type="text" class="form-control boughtItem8" placeholder="Item8">
+                        <input id="price" type="text" class="boughtItem8price form-control price price4" placeholder='0'>
+                        <button class="clearButton" type="button" id="clearItem8">X</button>
+                    </div>
+                </form>
+
+
+            </div>
+            <div class="col-2 totalWindow">
+                <div class="row totalRow">
+                    <p class="total">Total: </p>
+                </div>
+                <div class="row checkoutButtonRow">
+                    <button class="checkoutButton" type="button">CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container recentlyViewed">
+        <p id="recentTitle">RECENTLY VIEWED</p>
+        <div class="row recentlyViewedRow">
+
+            <div class="col-2" id="recentItem">
+                <div class="row recent1ImageRow recentImageRow">
+                    <div id="recent1image">
+                    </div>
+                </div>
+                <div class="row recent1TextRow recentTextRow">
+                    <div id="recent1text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2" id="recentItem">
+                <div class="row recent2ImageRow recentImageRow">
+                    <div id="recent2image">
+                    </div>
+                </div>
+                <div class="row recent2TextRow recentTextRow">
+                    <div id="recent2text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2" id="recentItem">
+                <div class="row recent3ImageRow recentImageRow">
+                    <div id="recent3image">
+                    </div>
+                </div>
+                <div class="row recent3TextRow recentTextRow">
+                    <div id="recent3text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2" id="recentItem">
+                <div class="row recent4ImageRow recentImageRow">
+                    <div id="recent4image">
+                    </div>
+                </div>
+                <div class="row recent4TextRow recentTextRow">
+                    <div id="recent4text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2" id="recentItem">
+                <div class="row recent5ImageRow recentImageRow">
+                    <div id="recent5image">
+                    </div>
+                </div>
+                <div class="row recent5TextRow recentTextRow">
+                    <div id="recent5text">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class='row'>
+            <div class='col-3'>
+                <h4>On Sale</h4>
+                <ul>
+                    <li>Card</li>
+                    <li>Card</li>
+                    <li>Card</li>
+                </ul>
+            </div>
+            <div class='col-3'>
+                <h4>More Info</h4>
+                <ul>
+                    <li>
+                        <a href='#'>Caring for your Bonsai</a>
+                    </li>
+                    <li>
+                        <a href='#'>History of Bonsai</a>
+                    </li>
+                    <li>
+                        <a href='#'>Where We Get Our Bonsai</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class='col-3'>
+                <h4>Visit Us</h4>
+                <a target='_blank' href='https://www.google.com/maps/place/Washington+Park+Arboretum+UW+Botanic+Gardens/@47.6357928,-122.2987471,15z/data=!4m8!1m2!2m1!1sarboretum!3m4!1s0x0:0xa24e5c167a647e8a!8m2!3d47.6397958!4d-122.2944698'>
+                    <img src='map.png' height='150px'>
+                </a>
+            </div>
+            <div class='col-3'>
+                <h4>Follow Us</h4>
+                <ul>
+                    <li>
+                        <a href='#'>Facebook</a>
+                    </li>
+                    <li>
+                        <a href='#'>Twitter</a>
+                    </li>
+                    <li>
+                        <a href='#'>Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./scriptcheck.js"></script>
+<script src="bundle.js"></script>
+
+</html>

@@ -1,0 +1,42 @@
+@import "./cards.css";
+@import "./stylecheck.css";
+
+body {
+  background-color: honeydew;
+}
+
+a {
+  color: #6A726A;
+}
+
+header {
+  color: #6A726A;
+}
+
+footer {
+  color: #6A726A;
+  background-color: white;
+  min-width: 100%
+}
+
+.email-form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.sign-up-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.carousel-item {
+  height: 300px;
+  overflow: hidden;
+  object-fit: contain;
+}
+

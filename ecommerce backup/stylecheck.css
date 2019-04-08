@@ -1,0 +1,159 @@
+.container {
+    border:1px solid;
+}
+
+div {
+    border:1px solid;
+}
+
+#checkoutCard {
+    width:550px;
+}
+
+#cartImage {
+    height: 80%;
+    width: 190px;
+}
+#billform {
+    display: flex;
+    justify-content: center;
+}
+
+#shipform {
+    display: flex;
+    justify-content: center;
+}
+
+#shipform, #billform {
+    height:40%;
+}
+
+.creditRow {
+    height: 60%;
+}
+
+.creditFields {
+    height:40%;
+}
+
+
+.cityStateZip {
+    display:inline-flex;
+}
+
+.rctImg {
+    height:100%;
+    margin:0 auto;
+}
+
+.creditImage {
+    height:100%;
+}
+.boughtItemsRow {
+    height:100%;
+    width:100%;
+}
+
+/* //.receipt container */
+
+.receiptContainer {
+    height: 250px;
+}
+
+.receiptImage{
+    height:100%;
+}
+.rctImg {
+    height:250px;
+}
+.items {
+    height:100%;
+}
+
+.pricesRow {
+    height:100%;
+}
+/* ITEMS FORM */
+.itemsForm {
+    width:100%;
+}
+
+/* PRICES FORM */
+
+#price {
+    width:60px;
+    margin-right:6px;
+}
+/* Total window and checkout button */
+.totalRow {
+    height:35%;
+}
+
+.checkoutButtonRow {
+    height: 65%;
+    width:100%;
+}
+
+.total {
+    font-size:50px;
+}
+
+/* ALL FORMS */
+.form-control {
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left:5px;
+}
+
+.item {
+    display:flex;
+}
+
+#item {
+    width:280px;
+}
+/*RECENT ITEMS*/
+
+#recentItem {
+    border:1px solid;
+    height: 170px;
+}
+#phtree {
+    height:160px;;
+    width:80px;
+}
+
+#recentTitle {
+    justify-items: center;
+}
+
+.recentlyViewed {
+    justify-content:space-between;
+}
+
+.recentlyViewedRow {
+    justify-content:space-between;
+    margin: 6px;
+}
+
+.recentImageRow {
+    height: 75%;
+}
+
+.recentTextRow {
+    height: 25%;
+}
+
+/* BUTTONS */
+
+ .clearButton {
+     width:30px;
+     height: 25px;
+     margin-top:10px;
+     margin-bottom: 10px;
+     margin-left:5px;
+ }
+
+ .checkoutButton {
+     width:100%;
+ }

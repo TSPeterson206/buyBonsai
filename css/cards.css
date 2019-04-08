@@ -1,0 +1,30 @@
+.buyButton{
+    clear: both;
+
+}
+
+.productInfo {
+    clear: both;
+    margin-bottom: 0px !important;
+}
+
+.priceBar {
+    background-color: #c6e1c6 !important;
+    height: 45px !important;
+}
+
+.dataBar {
+    background-color: #c6e1c6 !important;
+    height: 65px !important;
+}
+
+.priceText {
+    font-size: 1.3em !important;
+}
+
+.productPic {
+    max-width: 200px;
+    max-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
