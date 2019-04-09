@@ -10,7 +10,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/stylecheck.css" />
     <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" />
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script defer src="bundle.js"></script>
 
 </head>
@@ -40,7 +40,6 @@
                         </li>
                     </ul>
                 </nav>
-
                 <div class='col-3'>
                     <div class='row'>
                         <a href='./checkout.html'><img src='https://openclipart.org/download/26719/baroquon-Shopping-Cart.svg'
@@ -50,44 +49,47 @@
                 </div>
             </div>
         </header>
+        <div class='container'>
         <div class="row pmt">
-            <div id="paymentForms" class="col-lg-7">
+            <div id="paymentForms" class="col-lg-4">
                 <h3 class="shipTitle">Shipping Information</h3>
                 <div id="shipform">
                     <form id="shippingForm">
-                        <label for="shipName">Name</label>
-                        <input type="text" id="shipName" required>
-                        <label for="shipAdd1">Address1</label>
-                        <input type="text" id="shipAdd1" required><br>
-                        <label for="shipAdd2">Address2</label>
-                        <input type="text" id="shipAdd2">
-                        <label for="shipCity">City</label>
-                        <input type="text" id="shipCity" required><br>
-                        <label for="shipState">State</label>
-                        <input type="text" id="shipState" required>
-                        <label for="shipZip">Zip</label>
-                        <input type="text" id="shipZip" required><br>
-                        <label id="shipEmailLabel" for="shipEmail">E-Mail</label>
-                        <input type="email" id="shipEmail" required>
+                        <!-- <label for="shipName">Name</label> -->
+                        <input class="info" type="text" id="shipName" placeholder='Name' required><br>
+                        <!-- <label for="shipAdd1">Address1</label> -->
+                        <input class="info" type="text" id="shipAdd1" placeholder='Address1'required><br>
+                        <!-- <label for="shipAdd2">Address2</label> -->
+                        <input class="info" type="text" id="shipAdd2" placeholder='Address2'><br>
+                        <!-- <label for="shipCity">City</label> -->
+                        <input class="info" type="text" id="shipCity" placeholder='City' required><br>
+                        <!-- <label for="shipState">State</label> -->
+                        <input class="info" type="text" id="shipState" placeholder='State'required><br>
+                        <!-- <label for="shipZip">Zip</label> -->
+                        <input class="info" type="text" id="shipZip" placeholder='Zip'required><br>
+                        <!-- <label id="shipEmailLabel" for="shipEmail">E-Mail</label> -->
+                        <input class="info" type="email" id="shipEmail" placeholder='E-Mail'required>
                     </form>
                 </div>
+            </div>
+                <div id="paymentForms" class="col-lg-4">
                 <h3 class="billTitle">Billing Information</h3>
                 <div id="billform">
                     <form id="billingForm">
-                        <label for="billName">Name</label>
-                        <input class="info" type="text" id="billName" required>
-                        <label for="billName">Address1</label>
-                        <input class="info" type="text" id="billAdd1" required><br>
-                        <label for="billName">Address2</label>
-                        <input class="info" type="text" id="billAdd2">
-                        <label for="billName">City</label>
-                        <input class="info" type="text" id="billCity" required><br>
-                        <label for="billName">State</label>
-                        <input class="info" type="text" id="billState" required>
-                        <label for="billName">Zip</label>
-                        <input class="info" type="text" id="billZip" required><br>
-                        <label for="billName">E-Mail</label>
-                        <input class="info" type="email" id="billEmail" required>
+                        <!-- <label for="billName">Name</label> -->
+                        <input class="info" type="text" id="billName" placeholder='Name' required><br>
+                        <!-- <label for="billName">Address1</label> -->
+                        <input class="info" type="text" id="billAdd1" placeholder='Address1' required><br>
+                        <!-- <label for="billName">Address2</label> -->
+                        <input class="info" type="text" id="billAdd2" placeholder='Address2'><br>
+                        <!-- <label for="billName">City</label> -->
+                        <input class="info" type="text" id="billCity" placeholder='City' required><br>
+                        <!-- <label for="billName">State</label> -->
+                        <input class="info" type="text" id="billState" placeholder='State'required><br>
+                        <!-- <label for="billName">Zip</label> -->
+                        <input class="info" type="text" id="billZip" placeholder='Zip' required><br>
+                        <!-- <label for="billName">E-Mail</label> -->
+                        <input class="info" type="email" id="billEmail" placeholder='E-Mail' required><br>
                         <div class="shippingSubmit">
                             <label for="copyToBilling">Same as billing info?</label>
                             <input type="checkbox" id="copyToBilling">
@@ -96,25 +98,19 @@
                     </form>
                 </div>
             </div>
-            <div id="creditColumn" class="col-lg-5">
-                <!-- <div class="row creditRow">
-                    <div id="credit">
-                        <img class="creditImage" src="creditCard.jpg">
-                    </div>
-
-                </div> -->
+            <div id="creditColumn" class="col-lg-4">
                 <h3 class="creditTitle">Payment Information</h3>
                 <div class="creditFields">
                     <form class="creditCard">
-                        <label>Name on Card</label>
-                        <input type="text" class="creditName" required /><br>
-                        <label>Card Number</label>
-                        <input type="text" class="creditNumber" maxlength="16" placeholder="XXXX-XXXX-XXXX-XXXX"
+                        <!-- <label>Name on Card</label> -->
+                        <input type="text" class="creditName info" placeholder='Name on card' required /><br>
+                        <!-- <label>Card Number</label> -->
+                        <input type="text" class="creditNumber info" maxlength="16" placeholder="16 digit card #"
                             required /><br>
-                        <label>CVV</label>
-                        <input type="text" class="creditCVV" maxlength="3" size="4" placeholder="XXX" required />
-                        <label>Expiration Date</label>
-                        <input class="creditExpire" type="text" id="datepicker" placeholder="mm/yy" size="5" maxlength="5"
+                        <!-- <label>CVV</label> -->
+                        <input type="text" class="creditCVV info" maxlength="3" size="4" placeholder="CVV" required />
+                        <!-- <label>Expiration Date</label> -->
+                        <input class="creditExpire info" type="text" id="datepicker" placeholder="mm/yy" size="5" maxlength="5"
                             required><br>
                         <button type="button" class="creditSubmit btn btn-primary">Submit</button>
                     </form>
@@ -122,7 +118,8 @@
             </div>
         </div>
     </div>
-    <div class="container-flex receiptContainer">
+</div>
+    <div class="container-fluid receiptContainer">
         <div class="row">
             <div class="col-lg-3 checkoutGreeting"><br><br>
                 <p>Thank you for shopping with us! Please verify or adjust your cart and press 'Checkout' when done.</p>
@@ -135,7 +132,10 @@
                             </p>
                             <div id="price" class="boughtItem1price form-control price price1">
                             </div>
-                            <button class="clearButton" type="button" id="clearItem1">X</button>
+                            <!-- <button class="clearButton" type="button" id="clearItem1">X</button> -->
+                            <i class="far fa-times-circle clearButton"id="clearItem1"></i>
+
+
                         </div>
 
                         <div class="item">
@@ -143,7 +143,9 @@
                             </p>
                             <div id="price" class="boughtItem2price form-control price price2">
                             </div>
-                            <button class="clearButton" type="button" id="clearItem2">X</button>
+                            <!-- <button class="clearButton" type="button" id="clearItem2">X</button> -->
+                            <i class="far fa-times-circle clearButton"id="clearItem2"></i>
+
                         </div>
 
                         <div class="item">
@@ -151,7 +153,9 @@
                             </p>
                             <div id="price" class="boughtItem3price form-control price price3">
                             </div>
-                            <button class="clearButton" type="button" id="clearItem3">X</button>
+                            <!-- <button class="clearButton" type="button" id="clearItem3">X</button> -->
+                            <i class="far fa-times-circle clearButton"id="clearItem3"></i>
+
                         </div>
 
                         <div class="item">
@@ -159,12 +163,14 @@
                             </p>
                             <div id="price" class="boughtItem4price form-control price price4">
                             </div>
-                            <button class="clearButton" type="button" id="clearItem4">X</button>
+                            <!-- <button class="clearButton" type="button" id="clearItem4">X</button> -->
+                            <i class="far fa-times-circle clearButton"id="clearItem4"></i>
+
                         </div>
                     </form>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 boughtItems">
                 <div class="row boughtItemsRow">
                     <form id="itemsForm">
                         <div class="item">
@@ -172,7 +178,9 @@
                             </p>
                             <div id="price" class="boughtItem5price form-control price price1">
                             </div>
-                            <button class="clearButton" type="button" id="clearItem5">X</button>
+                            <!-- <button class="clearButton" type="button" id="clearItem5">X</button> -->
+                            <i class="far fa-times-circle clearButton"id="clearItem5"></i>
+
                         </div>
 
                         <div class="item">
@@ -180,7 +188,9 @@
                             </p>
                             <div id="price" class="boughtItem6price form-control price price2">
                             </div>
-                            <button class="clearButton" type="button" id="clearItem6">X</button>
+                            <!-- <button class="clearButton" type="button" id="clearItem6">X</button> -->
+                            <i class="far fa-times-circle clearButton"id="clearItem6"></i>
+
                         </div>
 
                         <div class="item">
@@ -188,7 +198,9 @@
                             </p>
                             <div id="price" class="boughtItem7price form-control price price3">
                             </div>
-                            <button class="clearButton" type="button" id="clearItem7">X</button>
+                            <!-- <button class="clearButton" type="button" id="clearItem7">X</button> -->
+                            <i class="far fa-times-circle clearButton"id="clearItem7"></i>
+
                         </div>
 
                         <div class="item">
@@ -196,7 +208,8 @@
                             </p>
                             <div id="price" class="boughtItem8price form-control price price4">
                             </div>
-                            <button class="clearButton" type="button" id="clearItem8">X</button>
+                            <!-- <button class="clearButton" type="button" id="clearItem8">X</button> -->
+                            <i class="far fa-times-circle clearButton"id="clearItem8"></i>
                         </div>
                     </form>
                 </div>

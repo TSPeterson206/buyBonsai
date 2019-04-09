@@ -44,6 +44,13 @@ footer {
   max-width:35%
 }
 
+.listByCategory, .priceByCategory, h4 {
+  text-align:center;
+  list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 @media only screen and (min-width: 300px) and (max-width:999px) {
   .carousel-item {
     height: 100px;
