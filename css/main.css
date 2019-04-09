@@ -40,3 +40,26 @@ footer {
   object-fit: contain;
 }
 
+.card {
+  max-width:35%
+}
+
+@media only screen and (min-width: 300px) and (max-width:999px) {
+  .carousel-item {
+    height: 100px;
+    background-size: cover;
+    object-fit: contain;
+
+    /* overflow: hidden;
+    object-fit: contain; */
+    /* width:100%; */
+  }
+
+  .creditImage {
+    height: 20%;
+}
+
+.card {
+  max-width:100%
+}
+}

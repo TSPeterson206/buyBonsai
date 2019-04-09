@@ -467,7 +467,7 @@ const { inventory } = require('./data');
 
 const cardTemplate = ({ id, img, title, description, price, category, stars }) => {
   return `
-      <div class="card m-3 border" style="min-width: 25%; max-width: 30%;">
+      <div class="card m-3 border" style="min-width: 25%; ;">
           <img class="card-img-top productPic" src="${img}" alt="${title}" style="width: 100%;">
           <div class="card-body">
           <h5 class="card-title">${title}</h5>

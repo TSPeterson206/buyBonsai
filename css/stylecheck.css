@@ -21,7 +21,7 @@ footer {
 #shipform {
     display: flex;
     flex-wrap: wrap;
-    height: 40%;
+    /* height: 40%; */
     justify-content: center;
     font-size:25px;
 }
@@ -47,8 +47,8 @@ footer {
     height: 90%;
 }
 .boughtItemsRow {
-    height: 100%;
-    width: 100%;
+    /* height: 100%;
+    width: 100%; */
 }
 
 #shipEmailLabel {
@@ -67,10 +67,10 @@ footer {
     flex-wrap:wrap;
 }
 .receiptContainer {
-    height: 250px;
+    /* height: 250px; */
 }
 .item {
-    height: 35%;
+    /* height: 35%; */
     width: 100%;
 }
 /* ITEMS FORM */
@@ -101,7 +101,7 @@ footer {
 .form-control {
     margin-top: 8px;
     margin-bottom: 10px;
-    margin-left: 35px;
+    margin-left: 10px;
 }
 .item {
     display: flex;
@@ -122,13 +122,14 @@ footer {
     color: #6A726A;
 }
 .recentlyViewed {
-    padding-top:100px;
+    /* padding-top:100px; */
     justify-content: space-between;
 }
 .recentlyViewedRow {
     justify-content: space-between;
     margin: 6px;
-    padding-bottom: 22px;
+    display:flex;
+    /* padding-bottom: 22px; */
 }
 .recentImageRow {
     height: 75%;
@@ -159,4 +160,21 @@ footer {
 .shippingSubmit {
     float:right;
     font-size: 18px;
+}
+
+@media only screen and (min-width: 300px) and (max-width:999px) {
+    .carousel-item {
+      height: 100px;
+      background-size: cover;
+      object-fit: contain;
+  
+      /* overflow: hidden;
+      object-fit: contain; */
+      width:100%;
+    }
+  
+    .creditImage {
+      /* height: 20%; */
+      display:none;
+  }
 }
