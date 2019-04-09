@@ -28,11 +28,11 @@ footer {
 .billTitle,
 .shipTitle, 
 .creditTitle {
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     text-align:center;
-    padding-top:5px;
-    font-size:40px;
+    /* padding-top:5px; */
+    font-size:30px;
     color: #6A726A;
 }
 .creditRow {
@@ -52,16 +52,27 @@ footer {
 }
 
 #shipEmailLabel {
-    margin-left:150px;
+    /* margin-left:150px; */
 }
 
 #shipEmail {
-    margin-left: 5px;
+    /* margin-left: 5px; */
+}
+
+.info {
+    border-radius:25px;
+    text-align:center;
+    margin-top:5px;
+}
+
+.creditCard { 
+    /* display:flex; */
+    flex:wrap;
 }
 
 /* Receipt container */
 .checkoutGreeting {
-    display:flex;
+    /* display:flex; */
     font-size:25px;
     font: bolder;
     flex-wrap:wrap;
@@ -102,6 +113,7 @@ footer {
     margin-top: 8px;
     margin-bottom: 10px;
     margin-left: 10px;
+    border-radius:25px;
 }
 .item {
     display: flex;
@@ -144,10 +156,10 @@ footer {
 
 /* BUTTONS */
 .clearButton {
-    width: 30px;
-    height: 25px;
+    /* width: 30px; */
+    /* height: 25px; */
     margin-top: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     margin-left: 5px;
 }
 .checkoutButton {
