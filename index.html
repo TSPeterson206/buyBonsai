@@ -5,40 +5,42 @@
   <title>eCommerce Site</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" />
   <script defer src="bundle.js"></script>
   <script>
-  function validate() {
-    const email = document.querySelector('.email').value
-    const subscribeBtn = document.querySelector('.btn-success')
-  
-    if (formatted(email)) {
-      subscribeBtn.disabled = false
-    } else {
-      subscribeBtn.disabled = true
+    function validate() {
+      const email = document.querySelector('.email').value
+      const subscribeBtn = document.querySelector('.btn-success')
+
+      if (formatted(email)) {
+        subscribeBtn.disabled = false
+      } else {
+        subscribeBtn.disabled = true
+      }
     }
-  }</script>
+  </script>
   <script>
     function formatted(email) {
-    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email)
-  }</script>
+      var re =
+        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email)
+    }
+  </script>
 </head>
 
 <body>
   <main class='container'>
-
     <header>
       <div class='row'>
-        <div class='col-lg-2'>
+        <div class='col-lg-2 firstCol'>
           <h1>
             <a href='/'>BuyBonsai</a>
           </h1>
         </div>
-        <nav class='col-lg-7'>
+        <div class='col-lg-8'>
           <ul class='nav'>
             <li class='nav-item'>
               <a class='nav-link' href='./products.html'>All Bonsai</a>
@@ -53,18 +55,17 @@
               <a class='nav-link' href='./products.html'>Specialty Bonsai</a>
             </li>
           </ul>
-        </nav>
 
-        <div class='col-lg-3'>
-          <div class='row'>
+        </div>
+        <div class='col-lg-1 cartColumn'>
+          <div>
             <a href='./checkout.html'><img src='https://openclipart.org/download/26719/baroquon-Shopping-Cart.svg'
-                height='30px' /></a>
-            <p class='number-in-cart'>0 Items</p>
+                height='25px' /></a>
+            <span class='number-in-cart'>0 Items</span>
           </div>
         </div>
       </div>
     </header>
-
     <div class="main">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -108,11 +109,11 @@
             <form class="email-form-container">
               <div>
               </div>
-              
-              <input required type="email" style="min-width: 300px" class="form-control email" placeholder="Enter e-mail here."
-                onkeydown="validate()">
+
+              <input required type="email" style="min-width: 300px" class="form-control email"
+                placeholder="Enter e-mail here." onkeydown="validate()">
           </div>
-          <div class="col">
+          <div class="col emailCol">
             <button type="submit" class="btn btn-success" disabled>Submit</button>
           </div>
           </form>
@@ -124,56 +125,57 @@
 
 
   <footer class='container'>
-    <div class='row justify-content-md-center'>
-        <div class='col-lg-1'></div>
-        <div class='col-lg-2'>
-            <h4>On Sale</h4>
-            <ul class="on-sale-footer">
-            </ul>
-        </div>
-        <div class='col-lg-5'>
-            <h4>More Info</h4>
-            <ul>
-                <li>
-                    <a href='#'>Caring for your Bonsai</a>
-                </li>
-                <li>
-                    <a href='#'>History of Bonsai</a>
-                </li>
-                <li>
-                    <a href='#'>Where We Get Our Bonsai</a>
-                </li>
+    <div class='row justify-content-md-center footerRow'>
+      <div class='col-lg-1'></div>
+      <div class='col-lg-2'>
+        <h4>On Sale</h4>
+        <ul class="on-sale-footer">
+        </ul>
+      </div>
+      <div class='col-lg-5'>
+        <h4>More Info</h4>
+        <ul class='moreInfoFooter'>
+          <li>
+            <a href='#'>Caring for your Bonsai</a>
+          </li>
+          <li>
+            <a href='#'>History of Bonsai</a>
+          </li>
+          <li>
+            <a href='#'>Where We Get Our Bonsai</a>
+          </li>
 
-            </ul>
-        </div>
-        <div class='col-lg-2'>
-            <h4>Visit Us</h4>
-            <a target='_blank' href='https://www.google.com/maps/place/Washington+Park+Arboretum+UW+Botanic+Gardens/@47.6357928,-122.2987471,15z/data=!4m8!1m2!2m1!1sarboretum!3m4!1s0x0:0xa24e5c167a647e8a!8m2!3d47.6397958!4d-122.2944698'>
-                <img src='map.png' height='150px'>
-            </a>
-        </div>
-        <div class='col-lg-2'>
-            <h4>Follow Us</h4>
-            <ul>
-                <li>
-                    <a href='#'>Facebook</a>
-                </li>
-                <li>
-                    <a href='#'>Twitter</a>
-                </li>
-                <li>
-                    <a href='#'>Instagram</a>
-                </li>
-            </ul>
-        </div>
+        </ul>
+      </div>
+      <div class='col-lg-2 visitUsColumn'>
+        <h4>Visit Us</h4>
+        <a target='_blank'
+          href='https://www.google.com/maps/place/Washington+Park+Arboretum+UW+Botanic+Gardens/@47.6357928,-122.2987471,15z/data=!4m8!1m2!2m1!1sarboretum!3m4!1s0x0:0xa24e5c167a647e8a!8m2!3d47.6397958!4d-122.2944698'>
+          <img class='visitUsPic' src='map.png' height='100px'>
+        </a>
+      </div>
+      <div class='col-lg-2'>
+        <h4>Follow Us</h4>
+        <ul class='followUsFooter'>
+          <li>
+            <a href='#'>Facebook</a>
+          </li>
+          <li>
+            <a href='#'>Twitter</a>
+          </li>
+          <li>
+            <a href='#'>Instagram</a>
+          </li>
+        </ul>
+      </div>
     </div>
-</footer>
+  </footer>
 
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-  crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+  integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
 
 </html>

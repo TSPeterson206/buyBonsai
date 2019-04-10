@@ -9,7 +9,7 @@ a {
 header {
     color: #6A726A;
 }
-  
+
 footer {
     color: #6A726A;
     background-color: white;
@@ -21,69 +21,56 @@ footer {
 #shipform {
     display: flex;
     flex-wrap: wrap;
-    /* height: 40%; */
     justify-content: center;
-    font-size:25px;
+    font-size: 25px;
 }
+
 .billTitle,
-.shipTitle, 
+.shipTitle,
 .creditTitle {
-    /* justify-content: center;
-    align-items: center; */
-    text-align:center;
-    /* padding-top:5px; */
-    font-size:30px;
+    text-align: center;
+    font-size: 30px;
     color: #6A726A;
 }
+
 .creditRow {
     height: 50%;
 }
+
 .creditFields {
     height: 40%;
-    justify-content:center;
-    font-size:25px;
+    justify-content: center;
+    font-size: 25px;
 }
+
 .creditImage {
     height: 90%;
 }
-.boughtItemsRow {
-    /* height: 100%;
-    width: 100%; */
-}
-
-#shipEmailLabel {
-    /* margin-left:150px; */
-}
-
-#shipEmail {
-    /* margin-left: 5px; */
-}
 
 .info {
-    border-radius:25px;
-    text-align:center;
-    margin-top:5px;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 5px;
 }
 
-.creditCard { 
-    /* display:flex; */
-    flex:wrap;
+.infoSubmit {
+    margin-top:10px;
+}
+.creditCard {
+    flex: wrap;
 }
 
 /* Receipt container */
 .checkoutGreeting {
-    /* display:flex; */
-    font-size:25px;
+    font-size: 25px;
     font: bolder;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
-.receiptContainer {
-    /* height: 250px; */
-}
+
 .item {
-    /* height: 35%; */
-    width: 100%;
+    width: 90%;
 }
+
 /* ITEMS FORM */
 .itemsForm {
     width: 100%;
@@ -99,13 +86,19 @@ footer {
 .totalRow {
     height: 45%;
 }
-.checkoutButtonRow {
+
+/* .checkoutButtonRow {
     height: 55%;
     width: 80%;
-    font-size:20px;
-}
+    font-size: 20px;
+} */
+
 .total {
     font-size: 40px;
+}
+
+.totalWindow {
+    text-align:center;
 }
 
 /* ALL ITEMS AND PRICES TEXT BOXES */
@@ -113,11 +106,13 @@ footer {
     margin-top: 8px;
     margin-bottom: 10px;
     margin-left: 10px;
-    border-radius:25px;
+    border-radius: 25px;
 }
+
 .item {
     display: flex;
 }
+
 #item {
     width: 280px;
 }
@@ -127,66 +122,103 @@ footer {
     border: 1px solid;
     height: 170px;
 }
+
 #recentTitle {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #6A726A;
 }
+
 .recentlyViewed {
-    /* padding-top:100px; */
     justify-content: space-between;
 }
+
 .recentlyViewedRow {
     justify-content: space-between;
     margin: 6px;
-    display:flex;
-    /* padding-bottom: 22px; */
+    display: flex;
 }
+
 .recentImageRow {
     height: 75%;
 }
+
 .recentTextRow {
     height: 25%;
 }
 
-#recent1text, #recent2text, #recent3text, #recent4text, #recent5text {
+#recent1text,
+#recent2text,
+#recent3text,
+#recent4text,
+#recent5text {
     margin-left: 15px;
 }
 
 /* BUTTONS */
 .clearButton {
-    /* width: 30px; */
-    /* height: 25px; */
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 5px;
 }
+
 .checkoutButton {
-    width: 100%;
-    
+    width: 50%;
+    height:50px;
 }
+
 .creditSubmit {
-    float:right;
+    /* float: right; */
 }
+
 .shippingSubmit {
-    float:right;
+    float: right;
     font-size: 18px;
 }
 
 @media only screen and (min-width: 300px) and (max-width:999px) {
-    .carousel-item {
-      height: 100px;
-      background-size: cover;
-      object-fit: contain;
-  
-      /* overflow: hidden;
-      object-fit: contain; */
-      width:100%;
+
+    .image1,
+    .image2,
+    .image3 {
+        height: 100px;
     }
-  
+
     .creditImage {
-      /* height: 20%; */
-      display:none;
-  }
+        display: none;
+    }
+
+    .on-sale-footer,
+    .moreInfoFooter,
+    .followUsFooter {
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .headerTitle {
+        justify-content: center;
+    }
+
+    .visitUsColumn {
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+    }
+
+    .visitUsPic {
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .footerRow {
+        text-align: center;
+    }
+    .firstCol, .cartColumn {
+        text-align:center;
+      }
 }
