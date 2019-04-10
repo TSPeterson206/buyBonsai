@@ -1,43 +1,43 @@
 // Shipping and Billing variables
 
-const name = document.querySelector('#shipName');
-const address1 = document.querySelector('#shipAdd1');
-const address2 = document.querySelector('#shipAdd2');
-const city = document.querySelector('#shipCity');
-const state = document.querySelector('#shipState');
-const zip = document.querySelector('#shipZip');
-const email = document.querySelector('#shipEmail');
+const name = document.querySelector('#shipName')
+const address1 = document.querySelector('#shipAdd1')
+const address2 = document.querySelector('#shipAdd2')
+const city = document.querySelector('#shipCity')
+const state = document.querySelector('#shipState')
+const zip = document.querySelector('#shipZip')
+const email = document.querySelector('#shipEmail')
 
 const allShipping = [name, address1, address2, city, state, zip, email]
 
-const billName = document.querySelector('#billName');
-const billAddress1 = document.querySelector('#billAdd1');
-const billAddress2 = document.querySelector('#billAdd2');
-const billCity = document.querySelector('#billCity');
-const billState = document.querySelector('#billState');
-const billZip = document.querySelector('#billZip');
-const billEmail = document.querySelector('#billEmail');
+const billName = document.querySelector('#billName')
+const billAddress1 = document.querySelector('#billAdd1')
+const billAddress2 = document.querySelector('#billAdd2')
+const billCity = document.querySelector('#billCity')
+const billState = document.querySelector('#billState')
+const billZip = document.querySelector('#billZip')
+const billEmail = document.querySelector('#billEmail')
 
-var checkBox = document.querySelector('#copyToBilling');
+var checkBox = document.querySelector('#copyToBilling')
 
 var allBilling = [billName, billAddress1, billAddress2, billCity, billState, billZip, billEmail]
 // Billing info copy event listener and function
 checkBox.addEventListener('change', billingCopy)
 
-function billingCopy() {
-    if (checkBox.checked) {
-        billName.value = name.value
-        billAddress1.value = address1.value
-        billAddress2.value = address2.value
-        billCity.value = city.value
-        billState.value = state.value
-        billZip.value = zip.value
-        billEmail.value = email.value
-    } else {
-        allBilling.forEach(element => {
-            element.value = ""
-        });
-    }
+function billingCopy () {
+  if (checkBox.checked) {
+    billName.value = name.value
+    billAddress1.value = address1.value
+    billAddress2.value = address2.value
+    billCity.value = city.value
+    billState.value = state.value
+    billZip.value = zip.value
+    billEmail.value = email.value
+  } else {
+    allBilling.forEach(element => {
+      element.value = ''
+    })
+  }
 }
 
 // Info event listener and function
@@ -45,9 +45,9 @@ const subButton1 = document.querySelector('.infoSubmit')
 
 subButton1.addEventListener('click', giveInfoResult)
 
-function giveInfoResult() {
-    if (
-        name.value.length > 0 &&
+function giveInfoResult () {
+  if (
+    name.value.length > 0 &&
         address1.value.length > 0 &&
         city.value.length > 0 &&
         state.value.length > 0 &&
@@ -59,13 +59,13 @@ function giveInfoResult() {
         billState.value.length > 0 &&
         billZip.value.length > 0 &&
         billEmail.value.length > 0
-    ) alert("Thank You! Please proceed.")
+  ) alert('Thank You! Please proceed.')
 
-    else {
-        alert("Please fill out all fields in both the shipping and billing forms. If the billing information is identical to the shipping address, feel free to click on the checkbox to fill it in automatically")
-    }
+  else {
+    alert('Please fill out all fields in both the shipping and billing forms. If the billing information is identical to the shipping address, feel free to click on the checkbox to fill it in automatically')
+  }
 }
-//Credit Card event listener and function
+// Credit Card event listener and function
 
 const creditName = document.querySelector('.creditName')
 const creditNumber = document.querySelector('.creditNumber')
@@ -76,18 +76,18 @@ const allCredit = [creditName, creditNumber, creditCVV, creditExpire]
 
 subButton2.addEventListener('click', giveCreditResult)
 
-function giveCreditResult() {
-    if (creditName.value.length > 0 &&
+function giveCreditResult () {
+  if (creditName.value.length > 0 &&
         creditNumber.value.length === 16 &&
         creditCVV.value.length === 3 &&
         creditExpire.value.length === 5) {
-        alert("Thank you!")
-    } else {
-        alert("Please complete all credit card info before proceeding")
-    }
+    alert('Thank you!')
+  } else {
+    alert('Please complete all credit card info before proceeding')
+  }
 };
 
-//Recently viewed items, images and text (localstorage)
+// Recently viewed items, images and text (localstorage)
 
 const recentItem1image = document.querySelector('#recent1image')
 const recentItem2image = document.querySelector('#recent2image')
@@ -113,8 +113,7 @@ recentItem3text.innerHTML = localStorage.getItem('recentTextThird')
 recentItem4text.innerHTML = localStorage.getItem('recentTextFourth')
 recentItem5text.innerHTML = localStorage.getItem('recentTextFifth')
 
-
-//Cart items
+// Cart items
 
 const boughtItem1 = document.querySelector('.boughtItem1')
 const boughtItem2 = document.querySelector('.boughtItem2')
@@ -136,7 +135,7 @@ boughtItem8.value = localStorage.getItem('boughtItem8')
 
 const boughtItems = [boughtItem1, boughtItem2, boughtItem3, boughtItem4, boughtItem5, boughtItem6, boughtItem7, boughtItem8]
 
-//Cart prices
+// Cart prices
 
 const boughtItem1price = document.querySelector('.boughtItem1price')
 const boughtItem2price = document.querySelector('.boughtItem2price')
@@ -156,7 +155,7 @@ boughtItem6price.value = localStorage.getItem('boughtItem6price')
 boughtItem7price.value = localStorage.getItem('boughtItem7price')
 boughtItem8price.value = localStorage.getItem('boughtItem8price')
 
-//Checkout button and total function
+// Checkout button and total function
 
 const checkoutButton = document.querySelector('.checkoutButton')
 const total = document.querySelector('.total')
@@ -165,7 +164,7 @@ const boughtItemsPrices = [boughtItem1price, boughtItem2price, boughtItem3price,
 checkoutButton.addEventListener('click', checkOut)
 
 boughtItemsPrices.forEach(element => {
-    element.value = element.value || 0
+  element.value = element.value || 0
 })
 
 let sumOfAll =
@@ -176,13 +175,12 @@ let sumOfAll =
     parseInt(boughtItem5price.value) +
     parseInt(boughtItem6price.value) +
     parseInt(boughtItem7price.value) +
-    parseInt(boughtItem8price.value);
+    parseInt(boughtItem8price.value)
 
-total.innerHTML = "Total: $" + sumOfAll
+total.innerHTML = 'Total: $' + sumOfAll
 
-function checkOut() {
-
-    if (name.value.length > 0 &&
+function checkOut () {
+  if (name.value.length > 0 &&
         address1.value.length > 0 &&
         city.value.length > 0 &&
         state.value.length > 0 &&
@@ -198,29 +196,29 @@ function checkOut() {
         creditNumber.value.length === 16 &&
         creditCVV.value.length === 3 &&
         creditExpire.value.length === 5
-    ) {
-        alert("Your Order Is Complete! Thank you!");
-        allBilling.forEach(element => {
-            element.value = ""
-        });
-        allCredit.forEach(element => {
-            element.value = ""
-        });
-        boughtItems.forEach(element => {
-            element.value = ""
-        });
-        boughtItemsPrices.forEach(element => {
-            element.value = ""
-        });
-        allShipping.forEach(element => {
-            element.value = ""
-        });
-    } else {
-        alert("Please fill out all fields")
-    }
+  ) {
+    alert('Your Order Is Complete! Thank you!')
+    allBilling.forEach(element => {
+      element.value = ''
+    })
+    allCredit.forEach(element => {
+      element.value = ''
+    })
+    boughtItems.forEach(element => {
+      element.value = ''
+    })
+    boughtItemsPrices.forEach(element => {
+      element.value = ''
+    })
+    allShipping.forEach(element => {
+      element.value = ''
+    })
+  } else {
+    alert('Please fill out all fields')
+  }
 }
 
-//Clear Buttons
+// Clear Buttons
 
 const clear1 = document.querySelector('#clearItem1')
 const clear2 = document.querySelector('#clearItem2')
@@ -231,16 +229,15 @@ const clear6 = document.querySelector('#clearItem6')
 const clear7 = document.querySelector('#clearItem7')
 const clear8 = document.querySelector('#clearItem8')
 
-clear1.addEventListener('click', () => clearAndReplace(boughtItem1,boughtItem1price))
-clear2.addEventListener('click', () => clearAndReplace(boughtItem2,boughtItem2price))
-clear3.addEventListener('click', () => clearAndReplace(boughtItem3,boughtItem3price))
-clear4.addEventListener('click', () => clearAndReplace(boughtItem4,boughtItem4price))
-clear5.addEventListener('click', () => clearAndReplace(boughtItem5,boughtItem5price))
-clear6.addEventListener('click', () => clearAndReplace(boughtItem6,boughtItem6price))
-clear7.addEventListener('click', () => clearAndReplace(boughtItem7,boughtItem7price))
-clear8.addEventListener('click', () => clearAndReplace(boughtItem8,boughtItem8price))
+clear1.addEventListener('click', () => clearAndReplace(boughtItem1, boughtItem1price))
+clear2.addEventListener('click', () => clearAndReplace(boughtItem2, boughtItem2price))
+clear3.addEventListener('click', () => clearAndReplace(boughtItem3, boughtItem3price))
+clear4.addEventListener('click', () => clearAndReplace(boughtItem4, boughtItem4price))
+clear5.addEventListener('click', () => clearAndReplace(boughtItem5, boughtItem5price))
+clear6.addEventListener('click', () => clearAndReplace(boughtItem6, boughtItem6price))
+clear7.addEventListener('click', () => clearAndReplace(boughtItem7, boughtItem7price))
+clear8.addEventListener('click', () => clearAndReplace(boughtItem8, boughtItem8price))
 
-
-function clearAndReplace (a,b) {
-    a.value = ""; b.value = "";
+function clearAndReplace (a, b) {
+  a.value = ''; b.value = ''
 }
