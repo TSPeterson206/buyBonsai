@@ -87,12 +87,6 @@ footer {
     height: 45%;
 }
 
-/* .checkoutButtonRow {
-    height: 55%;
-    width: 80%;
-    font-size: 20px;
-} */
-
 .total {
     font-size: 40px;
 }
@@ -166,10 +160,6 @@ footer {
 .checkoutButton {
     width: 50%;
     height:50px;
-}
-
-.creditSubmit {
-    /* float: right; */
 }
 
 .shippingSubmit {

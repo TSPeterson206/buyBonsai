@@ -21,7 +21,7 @@ footer {
 }
 
 .footerRow {
-  text-align:center;
+  /* text-align:center; */
 }
 .email-form-container {
   display: flex;
