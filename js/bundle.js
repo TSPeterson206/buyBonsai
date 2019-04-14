@@ -30,7 +30,7 @@ const inventory = [
   },
   {
     title: 'Juniper Bonsai',
-    img: './bonsai-1.jpg',
+    img: './images/bonsai-1.jpg',
     description: 'Our Juniper Tree leaves are needle-like, the plant is most often grown in the same classic Bonsai styles as the pine. Our Juniper has a wonderful fragrance.',
     price: 19.99,
     category: 'Beginner',
