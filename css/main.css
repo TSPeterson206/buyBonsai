@@ -11,7 +11,7 @@ a {
 
 header {
   color: #6A726A;
-  margin-bottom:30px;
+  margin-bottom: 30px;
 }
 
 footer {
@@ -23,6 +23,7 @@ footer {
 .footerRow {
   /* text-align:center; */
 }
+
 .email-form-container {
   display: flex;
   justify-content: center;
@@ -58,7 +59,7 @@ h4 {
 }
 
 .emailCol {
-  text-align:center;
+  text-align: center;
 }
 
 @media only screen and (min-width: 300px) and (max-width:999px) {
@@ -75,18 +76,22 @@ h4 {
   .card {
     max-width: 100%
   }
+
   .nav {
-    float:right;
+    float: right;
   }
-  .firstCol, .cartColumn {
-    text-align:center;
+
+  .firstCol,
+  .cartColumn {
+    text-align: center;
   }
+
   .on-sale-footer,
-    .moreInfoFooter,
-    .followUsFooter {
-        text-align: center;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
+  .moreInfoFooter,
+  .followUsFooter {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
 }
