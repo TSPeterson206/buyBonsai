@@ -83,4 +83,7 @@ const inventory = [
   }
 ]
 
-module.exports={inventory}
+const onSale = inventory.filter(bonsai => bonsai.category === 'Sale')
+
+
+module.exports={inventory, onSale}
