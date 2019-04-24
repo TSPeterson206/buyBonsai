@@ -4,6 +4,7 @@
   "description": "https://trello.com/invite/b/ySYXQDkB/06b72818038409aeb98aa2d3112b5f1f/bonsai",
   "main": "main.js",
   "scripts": {
+    "test": "mocha",
     "dev-server": "live-server .",
     "build": "browserify main.js -o bundle.js",
     "watch": "watchify main.js -o bundle.js",
@@ -11,18 +12,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/celiamarshall/bonsai-ecommerce-site.git"
+    "url": "git+https://github.com/TSPeterson206/buyBonsai.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/celiamarshall/bonsai-ecommerce-site/issues"
+    "url": "https://github.com/TSPeterson206/buyBonsai/issues"
   },
-  "homepage": "https://github.com/celiamarshall/bonsai-ecommerce-site#readme",
-  "dependencies": {},
+  "homepage": "https://github.com/TSPeterson206/buyBonsai#readme",
+  "dependencies": {
+    "chai": "^4.2.0"
+  },
   "devDependencies": {
     "browserify": "^16.2.3",
     "live-server": "^1.2.0",
+    "mocha": "^6.1.4",
     "run-all": "^1.0.1",
     "watchify": "^3.11.0"
   }
