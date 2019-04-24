@@ -25,9 +25,9 @@
   },
   "devDependencies": {
     "browserify": "^16.2.3",
-    "live-server": "^1.2.0",
+    "live-server": "^1.2.1",
     "mocha": "^6.1.4",
     "run-all": "^1.0.1",
-    "watchify": "^3.11.0"
+    "watchify": "^3.11.1"
   }
 }
