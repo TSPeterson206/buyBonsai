@@ -112,7 +112,6 @@ function newCartItems () {
   for (button of cartButtons) {
     button.addEventListener('click', function (event) {
       newCartNumber()
-      // add partciular item to local storage
       for (item of inventory) {
         if (item.id === Number(event.target.getAttribute('data-id'))) {
           cartItems.push(item.title)

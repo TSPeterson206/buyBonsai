@@ -20,10 +20,6 @@ footer {
   min-width: 100%
 }
 
-.footerRow {
-  /* text-align:center; */
-}
-
 .email-form-container {
   display: flex;
   justify-content: center;
